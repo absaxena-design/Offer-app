@@ -9,12 +9,43 @@
 </head>
 <body style="margin:0;background:#f7f8f5;font-family:system-ui,sans-serif;color:#224b35">
   <div id="root">
-    <div style="max-width:440px;margin:12vh auto;padding:28px;text-align:center">
+    <div style="max-width:520px;margin:12vh auto;padding:28px;text-align:center">
       <h1 style="font-size:42px;letter-spacing:-2px">arxa<span style="color:#83ac67">.</span></h1>
-      <p style="font-size:19px;font-weight:600">ARXA is loading…</p>
-      <p style="line-height:1.5;color:#677a6d">If this message remains visible, the app's JavaScript has not loaded. Refresh the page or check the browser console.</p>
+      <p id="arxa-status" style="font-size:19px;font-weight:600">ARXA is loading…</p>
+      <p id="arxa-help" style="line-height:1.5;color:#677a6d">Preparing your dashboard.</p>
     </div>
   </div>
+  <script>
+    (function () {
+      function show(status, help) {
+        var headline = document.getElementById('arxa-status');
+        var text = document.getElementById('arxa-help');
+        if (headline) headline.textContent = status;
+        if (text) text.textContent = help;
+      }
+      window.addEventListener('error', function (event) {
+        if (!document.querySelector('#root .app')) {
+          show('ARXA could not start', event.message || 'A required app file failed to load.');
+        }
+      });
+      window.addEventListener('unhandledrejection', function (event) {
+        if (!document.querySelector('#root .app')) {
+          show('ARXA could not start', String(event.reason || 'Unexpected startup error'));
+        }
+      });
+      window.addEventListener('load', function () {
+        if (document.querySelector('#root .app')) return;
+        var appScript = document.querySelector('script[type="module"]');
+        var source = appScript && appScript.getAttribute('src') || '';
+        if (source.indexOf('/src/main.jsx') !== -1) {
+          show('GitHub Pages is serving source files, not the built app.',
+            'Fix: Repository Settings → Pages → Build and deployment → Source → GitHub Actions. Then reload this page.');
+        } else {
+          show('ARXA did not start', 'The app bundle may have been blocked or failed. Check the browser console for details.');
+        }
+      });
+    }());
+  </script>
   <script type="module" src="/src/main.jsx"></script>
 </body>
 </html>
