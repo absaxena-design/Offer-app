@@ -1,0 +1,68 @@
+/* ARXA design tokens — Oxide / 01. Do not use raw hex in component styles. */
+:root {
+  /* Layer 1: immutable palette */
+  --color-oxide-100: #F5E5DF;
+  --color-oxide-300: #DCA293;
+  --color-oxide-500: #A34332;
+  --color-oxide-700: #802E22;
+  --color-sand-100: #F4EDE2;
+  --color-sand-300: #E8DCCA;
+  --color-sand-500: #C4B298;
+  --color-ink-300: #8791A1;
+  --color-ink-500: #526078;
+  --color-ink-700: #28324A;
+  --color-ink-900: #1D2638;
+  --color-cobalt-100: #E4EBFA;
+  --color-cobalt-500: #3455A4;
+  --color-cobalt-700: #243D7A;
+  --color-paper-50: #F8F4EC;
+  --color-paper-100: #F2ECE2;
+  --color-white: #FFFFFF;
+  --color-success-100: #E7F1E7;
+  --color-success-700: #286444;
+  --color-danger-100: #FBE9E4;
+  --color-danger-700: #A23528;
+
+  /* Layer 2: semantic roles */
+  --surface-canvas: var(--color-paper-50);
+  --surface-panel: var(--color-white);
+  --surface-raised: var(--color-white);
+  --surface-subtle: var(--color-sand-100);
+  --surface-accent: var(--color-oxide-100);
+  --surface-brand: var(--color-ink-700);
+  --surface-success: var(--color-success-100);
+  --text-primary: var(--color-ink-900);
+  --text-secondary: var(--color-ink-500);
+  --text-tertiary: #647086;
+  --text-inverse: var(--color-white);
+  --text-brand: var(--color-oxide-700);
+  --text-link: var(--color-cobalt-700);
+  --text-positive: var(--color-success-700);
+  --text-danger: var(--color-danger-700);
+  --icon-secondary: var(--color-ink-500);
+  --border-default: #D8D1C5;
+  --border-subtle: #EAE3D9;
+  --border-strong: var(--color-sand-500);
+  --border-interactive: var(--color-cobalt-500);
+  --action-primary: var(--color-oxide-500);
+  --action-primary-hover: var(--color-oxide-700);
+  --action-primary-text: var(--color-white);
+  --focus-ring: var(--color-cobalt-500);
+  --shadow-interactive: rgba(40, 50, 74, .12);
+
+  /* Layer 3: components */
+  --button-primary-bg: var(--action-primary);
+  --button-primary-bg-hover: var(--action-primary-hover);
+  --button-primary-fg: var(--action-primary-text);
+  --nav-active-bg: var(--color-oxide-100);
+  --nav-active-fg: var(--color-oxide-700);
+  --nav-count-bg: var(--color-sand-300);
+  --savings-panel-bg: var(--color-ink-700);
+  --savings-panel-fg: var(--color-white);
+  --savings-panel-muted: var(--color-sand-300);
+  --savings-emblem-bg: var(--color-ink-500);
+  --product-icon-bg: var(--color-sand-100);
+  --product-icon-fg: var(--color-oxide-700);
+  --history-summary-bg: var(--color-sand-300);
+  color-scheme: light;
+}
