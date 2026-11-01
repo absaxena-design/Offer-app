@@ -1,0 +1,48 @@
+/* ARXA foundation tokens — single light-mode scale */
+:root {
+  --font-body: 'DM Sans', sans-serif;
+  --font-display: 'Manrope', sans-serif;
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+  --font-weight-extrabold: 800;
+  --type-display-lg: clamp(2rem, 4vw, 3rem);
+  --type-display-xl: clamp(2.5rem, 6vw, 4.3125rem);
+  --type-heading-md: 1.5rem;
+  --type-heading-sm: 1.25rem;
+  --type-body-lg: 1rem;
+  --type-body-md: .875rem;
+  --type-body-sm: .8125rem;
+  --type-caption: .75rem;
+  --type-overline: .6875rem;
+  --line-tight: 1.25;
+  --line-normal: 1.5;
+  --line-relaxed: 1.6;
+  --tracking-display: -.045em;
+  --tracking-heading: -.025em;
+  --tracking-overline: .12em;
+
+  /* 4px spacing scale */
+  --space-1: .25rem;
+  --space-2: .5rem;
+  --space-3: .75rem;
+  --space-4: 1rem;
+  --space-5: 1.25rem;
+  --space-6: 1.5rem;
+  --space-7: 1.75rem;
+  --space-8: 2rem;
+  --space-9: 2.25rem;
+  --space-10: 2.5rem;
+  --space-12: 3rem;
+  --space-14: 3.5rem;
+  --space-16: 4rem;
+  --radius-sm: .5rem;
+  --radius-md: .75rem;
+  --radius-lg: 1rem;
+  --radius-xl: 1.25rem;
+  --radius-pill: 999px;
+  --elevation-card-hover: 0 4px 20px var(--shadow-interactive);
+  --content-max: 1160px;
+  --content-narrow: 840px;
+}
