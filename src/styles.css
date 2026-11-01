@@ -148,3 +148,7 @@
 .sync-alert{margin:var(--space-4);padding:var(--space-3);border:1px solid var(--border-subtle);background:var(--surface-panel);color:var(--text-primary);border-radius:var(--radius-md);font-size:var(--type-body-sm)}
 .sync-alert button{color:var(--text-brand);background:none;border:0;text-decoration:underline;cursor:pointer}
 @media(max-width:520px){.account-link{padding:var(--space-2)}.account-link span{display:none}}
+
+/* Keep the account name visible and truncate gracefully on small screens. */
+.account-link{max-width:180px;min-width:0}.account-link span{display:block;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+@media(max-width:520px){.account-link{max-width:104px;gap:var(--space-1)}.account-link span{display:block;max-width:72px}}
