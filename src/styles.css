@@ -41,3 +41,13 @@
 .empty .ui-button{margin-top:var(--space-3)}
 .history-card .ui-status{margin-top:var(--space-1)}
 @media(max-width:800px){.ui-toast{bottom:90px;right:var(--space-4);left:var(--space-4)}}
+
+
+/* Category selection and filter controls — light-only semantic tokens */
+.category-filters{display:flex;gap:var(--space-2);overflow-x:auto;padding:var(--space-1) 0 var(--space-4);margin-bottom:var(--space-3);scrollbar-width:thin}
+.category-filter{flex-shrink:0;border:1px solid var(--border-default);border-radius:var(--radius-pill);background:var(--surface-panel);color:var(--text-secondary);padding:var(--space-2) var(--space-3);font-size:var(--type-caption);font-weight:var(--font-weight-semibold)}
+.category-filter:hover{border-color:var(--border-interactive);color:var(--text-primary)}
+.category-filter.is-active{background:var(--nav-active-bg);border-color:var(--color-oxide-300);color:var(--nav-active-fg)}
+.category-label{display:inline-flex;max-width:max-content;color:var(--text-secondary);font-size:var(--type-caption);line-height:var(--line-normal);background:var(--surface-subtle);border-radius:var(--radius-sm);padding:var(--space-1) var(--space-2)}
+.ui-field select{width:100%;min-width:0;appearance:auto;border:1px solid var(--border-default);border-radius:var(--radius-md);background:var(--surface-panel);color:var(--text-primary);font:inherit;padding:var(--space-3) var(--space-4)}
+.ui-field select:focus-visible,.category-filter:focus-visible{outline:3px solid var(--focus-ring);outline-offset:2px}
