@@ -119,3 +119,10 @@
 .wins-breakdown>div span,.wins-breakdown>button span{min-width:0;overflow-wrap:anywhere}
 @media(max-width:800px){.topbar-actions{gap:var(--space-2)}.topbar-actions>.ui-button{font-size:0;gap:0;padding:var(--space-3)}.topbar-actions>.ui-button svg{width:19px;height:19px}.global-savings{padding:var(--space-2)}.global-savings > span:last-child{display:none}}
 @media(max-width:520px){.home-quick-add{padding:var(--space-5)}.quick-add-field{flex-wrap:wrap}.quick-add-field input{flex-basis:calc(100% - 45px)}.quick-add-field .ui-button{width:100%}.home-progress-values{grid-template-columns:1fr 1fr}.home-progress-values>div:first-child{grid-column:1/-1}.home-progress{padding:var(--space-4)}.wins-summary-secondary{grid-template-columns:1fr}.global-savings{font-size:var(--type-caption)}}
+
+
+/* Target reached: current recorded price <= desired target. Oxide, not success green. */
+.target-reached-badge{display:inline-flex;align-items:center;max-width:max-content;padding:var(--space-1) var(--space-2);border-radius:var(--radius-pill);background:var(--nav-active-bg);color:var(--nav-active-fg);font-size:var(--type-caption);font-weight:var(--font-weight-bold);line-height:var(--line-normal)}
+.target-detail-note{display:flex;flex-wrap:wrap;align-items:center;gap:var(--space-2);padding:var(--space-3) 0}
+.target-detail-note strong{color:var(--text-brand);font-size:var(--type-body-sm)}
+.target-detail-note span{color:var(--text-secondary);font-size:var(--type-caption)}
