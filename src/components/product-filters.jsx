@@ -28,7 +28,7 @@ export function matchesPrice(price,range){
 }
 export function filterAndSortProducts(products,{query='',category='all',price='all',sort='newest'}={}){
  const q=query.trim().toLocaleLowerCase();
- const filtered=products.filter(p=>(category==='all'||(p.category||'other')===category)&&matchesPrice(p.price,price)&&(!q||[p.title,p.store,p.category&&CATEGORIES.find(c=>c.id===p.category)?.label].filter(Boolean).join(' ').toLocaleLowerCase().includes(q)));
+ const filtered=products.filter(p=>(category==='all'||(p.category||'other')===category)&&matchesPrice(p.price,price)&&(!q||[p.title,p.store,p.retailer,p.seller,p.category&&CATEGORIES.find(c=>c.id===p.category)?.label].filter(Boolean).join(' ').toLocaleLowerCase().includes(q)));
  return [...filtered].sort((a,b)=>{
   switch(sort){
    case 'oldest':return new Date(a.addedAt||0)-new Date(b.addedAt||0);
