@@ -3,16 +3,25 @@
 <head>
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <meta name="theme-color" content="#f7f8f5"/>
+  <meta name="theme-color" content="#F8F4EC"/>
   <meta name="description" content="ARXA — smarter product price tracking"/>
   <title>ARXA — Track smarter</title>
+  <style>
+    :root { --fallback-paper: #F8F4EC; --fallback-ink: #28324A; --fallback-oxide: #A34332; --fallback-muted: #526078; }
+    body { margin: 0; background: var(--fallback-paper); font-family: system-ui, sans-serif; color: var(--fallback-ink); }
+    .startup { max-width: 520px; margin: 12vh auto; padding: 28px; text-align: center; }
+    .startup-brand { font-size: 42px; letter-spacing: -2px; }
+    .startup-brand-accent { color: var(--fallback-oxide); }
+    .startup-status { font-size: 19px; font-weight: 600; }
+    .startup-help { line-height: 1.5; color: var(--fallback-muted); }
+  </style>
 </head>
-<body style="margin:0;background:#f7f8f5;font-family:system-ui,sans-serif;color:#224b35">
+<body>
   <div id="root">
-    <div style="max-width:520px;margin:12vh auto;padding:28px;text-align:center">
-      <h1 style="font-size:42px;letter-spacing:-2px">arxa<span style="color:#83ac67">.</span></h1>
-      <p id="arxa-status" style="font-size:19px;font-weight:600">ARXA is loading…</p>
-      <p id="arxa-help" style="line-height:1.5;color:#677a6d">Preparing your dashboard.</p>
+    <div class="startup">
+      <h1 class="startup-brand">arxa<span class="startup-brand-accent">.</span></h1>
+      <p id="arxa-status" class="startup-status">ARXA is loading…</p>
+      <p id="arxa-help" class="startup-help">Preparing your dashboard.</p>
     </div>
   </div>
   <script>
