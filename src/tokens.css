@@ -36,6 +36,8 @@
   --text-tertiary: #647086;
   --text-inverse: var(--color-white);
   --text-brand: var(--color-oxide-700);
+  --text-target: var(--color-oxide-700);
+  --text-brand-accent: var(--color-oxide-500);
   --text-link: var(--color-cobalt-700);
   --text-positive: var(--color-success-700);
   --text-danger: var(--color-danger-700);
