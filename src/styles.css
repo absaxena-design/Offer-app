@@ -68,3 +68,54 @@
 .product-filter-fields select{width:100%;min-width:0;background:var(--surface-panel);color:var(--text-primary);border:1px solid var(--border-default);border-radius:var(--radius-md);padding:var(--space-3);font:inherit;font-size:var(--type-body-sm)}
 .reset-filters{border:0;background:transparent;color:var(--text-link);display:flex;align-items:center;gap:var(--space-1);font-size:var(--type-body-sm);font-weight:var(--font-weight-semibold);margin-top:var(--space-4);padding:var(--space-1) 0}
 @media(max-width:600px){.product-filters{padding:var(--space-4)}.product-filter-fields{grid-template-columns:1fr 1fr}.product-filter-fields label:last-child{grid-column:1/-1}}
+
+
+/* Homepage V2: balanced shopping companion */
+.topbar-actions{display:flex;align-items:center;gap:var(--space-3)}
+.global-savings{border:1px solid var(--border-default);border-radius:var(--radius-pill);padding:var(--space-2) var(--space-3);background:var(--surface-subtle);color:var(--text-primary);display:flex;align-items:center;gap:var(--space-2);white-space:nowrap;font-size:var(--type-body-sm)}
+.global-savings svg{color:var(--text-brand)}
+.global-savings span:last-child{color:var(--text-secondary)}
+.global-savings:hover{border-color:var(--border-interactive)}
+.home-v2{display:grid;gap:var(--space-6)}
+.home-v2>.subheading{margin-top:calc(-1 * var(--space-4));margin-bottom:var(--space-2)}
+.home-quick-add{background:var(--surface-brand);color:var(--text-inverse);border-radius:var(--radius-xl);padding:var(--space-8);display:grid;gap:var(--space-5)}
+.home-quick-add .eyebrow{color:var(--savings-panel-muted)}
+.home-quick-add h2{font-size:var(--type-heading-md);margin:0;letter-spacing:var(--tracking-heading)}
+.home-quick-add p{color:var(--savings-panel-muted);margin:var(--space-2) 0 0;font-size:var(--type-body-sm)}
+.quick-add-form{display:grid;gap:var(--space-2)}
+.quick-add-form>label{font-size:var(--type-caption);font-weight:var(--font-weight-bold)}
+.quick-add-field{display:flex;align-items:center;gap:var(--space-3);background:var(--surface-panel);border-radius:var(--radius-md);color:var(--text-secondary);padding:var(--space-2) var(--space-2) var(--space-2) var(--space-4)}
+.quick-add-field:focus-within{outline:2px solid var(--focus-ring);outline-offset:2px}
+.quick-add-field input{flex:1;min-width:0;color:var(--text-primary);border:0;outline:0;background:transparent;padding:var(--space-2) 0;font:inherit}
+.quick-add-manual{color:var(--savings-panel-muted);border:0;background:transparent;display:inline-flex;gap:var(--space-2);align-items:center;justify-self:start;padding:var(--space-2) 0}
+.home-section{display:grid;gap:var(--space-3)}
+.home-section .section-heading h2{margin:0}
+.home-section .section-heading{gap:var(--space-3)}
+.home-section-note{font-size:var(--type-caption);color:var(--text-secondary);margin:var(--space-1) 0 0}
+.home-monitoring,.home-attention-list{display:grid;gap:var(--space-2)}
+.home-monitoring-item,.home-attention-item{width:100%;display:flex;gap:var(--space-3);align-items:center;background:var(--surface-panel);border:1px solid var(--border-subtle);color:var(--text-primary);border-radius:var(--radius-md);padding:var(--space-4);text-align:left}
+.home-monitoring-item>svg,.home-attention-item>svg:first-child{color:var(--text-brand);flex-shrink:0}
+.home-monitoring-copy,.home-attention-item>span{display:grid;gap:var(--space-1);flex:1;min-width:0}
+.home-monitoring-copy small,.home-attention-item small{color:var(--text-secondary)}
+.home-monitoring-days{flex-shrink:0;color:var(--text-brand);font-size:var(--type-body-sm);font-weight:var(--font-weight-bold)}
+.home-progress{display:grid;gap:var(--space-4);padding:var(--space-6);border:1px solid var(--border-subtle);border-radius:var(--radius-lg);background:var(--surface-panel)}
+.home-progress h2{margin:0}
+.home-progress p{color:var(--text-secondary);font-size:var(--type-body-sm)}
+.home-progress-values{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:var(--space-3)}
+.home-progress-values>div{display:grid;gap:var(--space-2);padding:var(--space-4);background:var(--surface-subtle);border-radius:var(--radius-md)}
+.home-progress-values strong{font-family:var(--font-display);font-size:var(--type-heading-sm)}
+.home-progress-values small{color:var(--text-secondary)}
+.home-progress>.ui-button{justify-self:start}
+.wins-content{display:grid;gap:var(--space-7)}
+.wins-summary{display:grid;gap:var(--space-3);background:var(--surface-brand);color:var(--text-inverse);padding:var(--space-7);border-radius:var(--radius-xl)}
+.wins-summary>strong{font:var(--font-weight-extrabold) var(--type-display-lg)/var(--line-tight) var(--font-display)}
+.wins-summary small{color:var(--savings-panel-muted)}
+.wins-summary-secondary{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:var(--space-3)}
+.wins-summary-secondary>div{display:grid;gap:var(--space-2);padding:var(--space-5);background:var(--surface-panel);border:1px solid var(--border-subtle);border-radius:var(--radius-lg)}
+.wins-summary-secondary strong{font-size:var(--type-heading-md)}
+.wins-summary-secondary span{color:var(--text-secondary);font-size:var(--type-body-sm)}
+.wins-breakdown{display:grid;gap:var(--space-2)}
+.wins-breakdown>div,.wins-breakdown>button{display:flex;justify-content:space-between;align-items:center;gap:var(--space-3);padding:var(--space-4);border:1px solid var(--border-subtle);border-radius:var(--radius-md);background:var(--surface-panel);color:var(--text-primary);text-align:left}
+.wins-breakdown>div span,.wins-breakdown>button span{min-width:0;overflow-wrap:anywhere}
+@media(max-width:800px){.topbar-actions{gap:var(--space-2)}.topbar-actions>.ui-button{font-size:0;gap:0;padding:var(--space-3)}.topbar-actions>.ui-button svg{width:19px;height:19px}.global-savings{padding:var(--space-2)}.global-savings span:last-child{display:none}}
+@media(max-width:520px){.home-quick-add{padding:var(--space-5)}.quick-add-field{flex-wrap:wrap}.quick-add-field input{flex-basis:calc(100% - 45px)}.quick-add-field .ui-button{width:100%}.home-progress-values{grid-template-columns:1fr 1fr}.home-progress-values>div:first-child{grid-column:1/-1}.home-progress{padding:var(--space-4)}.wins-summary-secondary{grid-template-columns:1fr}.global-savings{font-size:var(--type-caption)}}
