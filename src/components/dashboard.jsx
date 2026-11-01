@@ -1,0 +1,7 @@
+import React from 'react';
+import { ArrowDownRight, TrendingDown } from 'lucide-react';
+import { PriceDisplay } from './product.jsx';
+export function SavingsCard({savings}) {return <div className="hero"><div><span className="hero-label"><TrendingDown size={16}/> YOUR RECORDED SAVINGS</span><div className="hero-value"><PriceDisplay value={savings}/></div><p>Compared with prices recorded at purchase; not verified retailer discounts.</p></div><div className="hero-decoration"><ArrowDownRight size={74}/></div></div>}
+export function StatCard({Icon,value,label}) {return <div className="stat"><Icon size={20}/><strong>{value}</strong><span>{label}</span></div>}
+export function StatGrid({children}) {return <div className="stat-grid">{children}</div>}
+export function PriceHistoryChart({history=[]}) {const vals=history.filter(h=>Number.isFinite(Number(h.price))).map(h=>({...h,price:Number(h.price)}));if(vals.length<2)return <p className="hint">Price history becomes available once automated price recording is connected.</p>;const lo=Math.min(...vals.map(x=>x.price)),hi=Math.max(...vals.map(x=>x.price)),range=hi-lo||1;const d=vals.map((x,i)=>`${i===0?'M':'L'} ${(i/(vals.length-1)*100).toFixed(2)} ${(90-(x.price-lo)/range*80).toFixed(2)}`).join(' ');return <svg className="ui-chart" viewBox="0 0 100 100" role="img" aria-label="Price history trend" preserveAspectRatio="none"><path d={d} fill="none" stroke="currentColor" strokeWidth="2" vectorEffect="non-scaling-stroke"/></svg>}
