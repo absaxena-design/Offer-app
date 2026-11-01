@@ -140,3 +140,5 @@
 @media(max-width:520px){.recovery-actions .ui-button{width:100%}.cost-preview>div{flex-direction:column;gap:var(--space-1)}}
 
 .shipping-edit{display:flex;flex-wrap:wrap;gap:var(--space-2)}.shipping-edit input{flex:1;min-width:150px;border:1px solid var(--border-default);border-radius:var(--radius-md);padding:var(--space-3);color:var(--text-primary);background:var(--surface-panel)}
+
+.seller-editor{margin-top:var(--space-5);border-top:1px solid var(--border-subtle);padding-top:var(--space-4)}.seller-editor summary{cursor:pointer;color:var(--text-link);font-size:var(--type-body-sm);font-weight:var(--font-weight-bold)}.seller-editor .form{margin-top:var(--space-4)}
