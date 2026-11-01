@@ -142,3 +142,9 @@
 .shipping-edit{display:flex;flex-wrap:wrap;gap:var(--space-2)}.shipping-edit input{flex:1;min-width:150px;border:1px solid var(--border-default);border-radius:var(--radius-md);padding:var(--space-3);color:var(--text-primary);background:var(--surface-panel)}
 
 .seller-editor{margin-top:var(--space-5);border-top:1px solid var(--border-subtle);padding-top:var(--space-4)}.seller-editor summary{cursor:pointer;color:var(--text-link);font-size:var(--type-body-sm);font-weight:var(--font-weight-bold)}.seller-editor .form{margin-top:var(--space-4)}
+
+.account-link{display:inline-flex;align-items:center;gap:var(--space-2);background:transparent;border:1px solid var(--border-subtle);border-radius:var(--radius-pill);color:var(--text-primary);padding:var(--space-2) var(--space-3);cursor:pointer;font:inherit;font-size:var(--type-caption)}
+.account-link:hover{background:var(--surface-subtle)}
+.sync-alert{margin:var(--space-4);padding:var(--space-3);border:1px solid var(--border-subtle);background:var(--surface-panel);color:var(--text-primary);border-radius:var(--radius-md);font-size:var(--type-body-sm)}
+.sync-alert button{color:var(--text-brand);background:none;border:0;text-decoration:underline;cursor:pointer}
+@media(max-width:520px){.account-link{padding:var(--space-2)}.account-link span{display:none}}
